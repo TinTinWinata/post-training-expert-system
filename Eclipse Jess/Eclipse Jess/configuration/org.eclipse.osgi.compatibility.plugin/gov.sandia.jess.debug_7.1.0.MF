@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Generated-from: 1225746088000;type=2
+Bundle-ManifestVersion: 2
+Bundle-Name: Jess Debugger
+Bundle-SymbolicName: gov.sandia.jess.debug; singleton:=true
+Bundle-Version: 7.1.0
+Bundle-ClassPath: jessdebug.jar
+Bundle-Activator: gov.sandia.jess.debug.JessDebugPlugin
+Bundle-Vendor: Sandia National Laboratories
+Bundle-Localization: plugin
+Export-Package: gov.sandia.jess.debug,
+ gov.sandia.jess.debug.agenda,
+ gov.sandia.jess.debug.caview,
+ gov.sandia.jess.debug.launching,
+ gov.sandia.jess.debug.model,
+ gov.sandia.jess.debug.monitoring,
+ gov.sandia.jess.debug.sourcelookup
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.debug.core,
+ org.eclipse.jdt.launching,
+ org.eclipse.jdt.core,
+ org.eclipse.debug.ui,
+ org.eclipse.jdt.ui,
+ org.eclipse.ui.ide,
+ org.eclipse.jdt.debug.ui,
+ org.eclipse.core.resources,
+ org.eclipse.ui.editors,
+ org.eclipse.ui.workbench.texteditor,
+ org.eclipse.jface.text,
+ gov.sandia.jess.editor,
+ gov.sandia.jess,
+ org.eclipse.core.variables,
+ org.junit
+Eclipse-LazyStart: true

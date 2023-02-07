@@ -1,0 +1,37 @@
+Template
+(deftemplate [template_name]
+	(slot [attribute_name])
+	(slot [attribute_name])
+	(slot [attribute_name])
+	...
+) => used to create template
+
+(deffacts [deffact_name]
+	([template_name] 
+		([attribute_name_1] [value])
+		([attribute_name_2] [value])
+		([attribute_name_2] [value])
+		...
+	)
+) => used to insert many predefine facts
+
+(reset) => used to clear all facts, then re insert MAIN-fact and facts defined on deffacts
+
+Fact Operation
+(assert ([template_name] 
+		([attribute_name_1] [value])
+		([attribute_name_2] [value])
+		([attribute_name_2] [value])
+		...
+)) => used to insert fact
+
+(modify [fact_id]
+		([attribute_name_1] [value])
+		([attribute_name_2] [value])
+		([attribute_name_2] [value])
+		...
+) => used to update fact
+
+(retract [fact_id]) => used to remove fact
+
+(facts) => used to show facts

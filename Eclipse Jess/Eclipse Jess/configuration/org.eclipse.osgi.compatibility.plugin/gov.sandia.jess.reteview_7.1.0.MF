@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Generated-from: 1225746088000;type=2
+Bundle-ManifestVersion: 2
+Bundle-Name: Jess Rete Network Viewer
+Bundle-SymbolicName: gov.sandia.jess.reteview; singleton:=true
+Bundle-Version: 7.1.0
+Bundle-ClassPath: reteview.jar
+Bundle-Activator: gov.sandia.jess.reteview.ReteViewPlugin
+Bundle-Vendor: Sandia National Laboratories
+Bundle-Localization: plugin
+Export-Package: gov.sandia.jess.reteview
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.gef,
+ gov.sandia.jess.editor,
+ gov.sandia.jess,
+ org.eclipse.core.runtime,
+ org.junit
+Eclipse-LazyStart: true

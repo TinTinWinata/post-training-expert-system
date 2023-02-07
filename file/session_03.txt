@@ -1,0 +1,22 @@
+Rule
+(defrule [defrule_name]
+	LHS
+		=>
+	RHS
+) => used to create rule
+
+LHS usually contains fact to be check
+RHS is action if fact(s) exists
+
+(run) => run all rules
+
+Triggering Specific Rule
+(defrule [defrule_name]
+	([fact_trigger]) # this fact is act as rule trigger 
+	LHS
+		=>
+	RHS
+)
+
+(assert ([fact_trigger]) => assert rule trigger fact
+(run) => run specific rule

@@ -1,0 +1,2 @@
+https://www.csie.ntu.edu.tw/~sylee/courses/jess/docs/language.html
+http://alvarestech.com/temp/fuzzyjess/Jess60/Jess70b7/docs/rules.html

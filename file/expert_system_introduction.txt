@@ -1,0 +1,1 @@
+https://blogs.sap.com/2022/11/10/introduction-to-the-rete-algorithm/#:~:text=The%20Rete%20algorithm%20is%20a,against%20the%20patterns%20in%20rules.

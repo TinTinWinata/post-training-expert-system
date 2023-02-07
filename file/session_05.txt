@@ -1,0 +1,21 @@
+Rete Engine Java
+public static Rete engine = new Rete()
+engine.batch([.clp file])
+engine.reset()
+engine.run()
+=> make the engine static so can be used in template gui
+
+Query
+(defquery [defquery_name]
+	([deftemplate_name] ([attribute_name]) ...)
+) => to create a query
+
+Java GUI
+(new [Template GUI file])
+
+Get Query
+QueryResult queryRes = Main.engine.runQueryStar([defquery_name], new ValueVector());
+queryRes.getString([attribute_name]) => attribute name must be same as in the defquery
+
+Notes:
+Rete engine file and template gui file must be different

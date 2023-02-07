@@ -1,0 +1,55 @@
+I/O
+(printout t "hello world" crlf) => print
+(format t "%s %d" "hello world" 1) => print normal
+(read) => read without space
+(readline) => read with space
+
+Variable
+?[variable_name] => variable
+(defglobal ?*[variable_name]* = [value]) => global variable
+
+Operator
+(bind [variable] [value]) => create variable
+(+ [value] [value]) => addition operator
+(- [value] [value]) => subtraction operator
+(* [value] [value]) => multiplication operator
+(/ [value] [value]) => division operator
+(mod [value] [value]) => modulo operator
+(< [value] [value]) => less than operator
+(> [value] [value]) => greater than operator
+(<= [value] [value]) => less than and equal operator
+(>= [value] [value]) => greater than and equal operator
+(eq [value] [value]) => equal operator
+(neq [value] [value]) => not equal operator
+(not [expression]) => negation operator
+(or [expression] [expression]) => or operator
+(and [expression] [expression]) => and operator
+
+String Manipulation
+(str-cat [value] [value]) => concat string
+(str-compare [value] [value]) => compare string
+(str-index [value] [value]) => get substring index
+(str-length [value]) => get length of string
+(lowcase [value]) => convert string to lowercase
+(upcase [value]) => convert string to uppercase
+
+Type Checking
+(integerp [value]) => check if value is integer
+(stringp [value]) => check if value is string
+
+Selection
+(if [expression] then [todo]
+ elif [expression] then [todo]
+ else [todo]
+) => selection statement
+
+Looping
+(while [expression]
+ do [todo]
+) => looping statement
+
+Function
+(deffunction [function_name] ([parameters]...)
+ [todo]
+) => create function
+([function_name] [value]...)
